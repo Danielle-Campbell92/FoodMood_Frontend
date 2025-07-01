@@ -11,9 +11,7 @@ Ever wanted your food to match your mood? Now you can with FoodMood. The incredi
 Contract:
 https://docs.google.com/document/d/1p2YA3c-yMghuOzuREJy8hr-uABh0Lnpv-R57thmVHyY/edit?tab=t.0
 
-
-![image](https://github.com/user-attachments/assets/8a852580-a60b-4e52-b4a9-09037c3976a6)
-
+![Screenshot 2025-06-30 at 9 26 49 PM](https://github.com/user-attachments/assets/1d23940a-7573-4784-b9e5-0d5db9582415)
 
 API Routes:
 /users router
@@ -44,3 +42,13 @@ User will choose an mood from the homepage(i.e. happy, angry, sad, etc.). Once s
 
 Project Management:
 Trello board that is high priority task with designated tasks, one board for tier 2 with designated tasks for each team member, another board for tier 3 that we can assign at random 
+
+
+Roles:
+Lyndsey: frontend and backend calls for playlist, css styling, seeding for playlist
+
+Rebekah: mood frontend and backend calls, seeding for mood, css styling
+
+Darius: recipes frontend and backend calls, seeding for recipes, recipe details, css styling
+
+Dani: users frontend and backend calling, seeding for the users and saved, mood tracker, css styling
