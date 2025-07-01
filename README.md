@@ -6,7 +6,7 @@ Team Name:
 Moody Foodies
 
 Elevator Pitch:
-Ever wanted your food to match your mood? Now you can with Food Mood. The incredible app that allows you to select your meals based on what you are currently feeling. What’s even better is that with this app it will match your recipe with a song list to listen to while you create your dishes and consume them as well.
+Ever wanted your food to match your mood? Now you can with FoodMood. The incredible app that allows you to select your meals based on what you are currently feeling. What’s even better is that with this app it will match your recipe with a song list to listen to while you create your dishes and consume them as well.
 
 Contract:
 https://docs.google.com/document/d/1p2YA3c-yMghuOzuREJy8hr-uABh0Lnpv-R57thmVHyY/edit?tab=t.0
