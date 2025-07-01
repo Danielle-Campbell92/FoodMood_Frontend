@@ -42,7 +42,8 @@ User will choose an mood from the homepage(i.e. happy, angry, sad, etc.). Once s
 
 Project Management:
 Trello board that is high priority task with designated tasks, one board for tier 2 with designated tasks for each team member, another board for tier 3 that we can assign at random 
-
+[
+](https://trello.com/b/qQDtAjR9/capstone)
 
 Roles:
 Lyndsey: frontend and backend calls for playlist, css styling, seeding for playlist
