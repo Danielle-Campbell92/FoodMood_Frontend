@@ -11,7 +11,7 @@ Ever wanted your food to match your mood? Now you can with FoodMood. The incredi
 Contract:
 https://docs.google.com/document/d/1p2YA3c-yMghuOzuREJy8hr-uABh0Lnpv-R57thmVHyY/edit?tab=t.0
 
-![Screenshot 2025-06-30 at 9 26 49 PM](https://github.com/user-attachments/assets/1d23940a-7573-4784-b9e5-0d5db9582415)
+![Screenshot 2025-07-01 at 7 31 11 PM](https://github.com/user-attachments/assets/88b5a848-8d57-4b0a-928c-6ce0f50287ca)
 
 API Routes:
 /users router
