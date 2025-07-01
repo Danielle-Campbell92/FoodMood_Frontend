@@ -11,31 +11,9 @@ Ever wanted your food to match your mood? Now you can with Food Mood. The incred
 Contract:
 https://docs.google.com/document/d/1p2YA3c-yMghuOzuREJy8hr-uABh0Lnpv-R57thmVHyY/edit?tab=t.0
 
-Database Schema:
-*mood_id connected to recipes
-*mood_id connected to music
 
-users:
-id serial
-username text NN
-password text NN
+![image](https://github.com/user-attachments/assets/8a852580-a60b-4e52-b4a9-09037c3976a6)
 
-recipes:
-id serial
-cuisine text NN
-ingredients text NN
-instructions text NN
-mood_id int NN
-
-Mood:
-id serial
-emotion text NN
-
-Music:
-id serial
-type text NN
-mood_id int NN
-playlist url NN
 
 API Routes:
 /users router
