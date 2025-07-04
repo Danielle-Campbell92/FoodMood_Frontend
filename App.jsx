@@ -1,10 +1,10 @@
 import Navigations from './components/Navigations';
 import RecipeList from './compnenents/RecipeList';
 import RecipeDetails from './componenets/RecipeDetails';
-import 
+import {Routes, Route} from ''
 
 
-function App(){
+export default function App(){
     const [token, setToken] = useState(localStorage.getItem("token"))
 
 
@@ -25,4 +25,3 @@ function App(){
     )
 }
 
-export default App;
