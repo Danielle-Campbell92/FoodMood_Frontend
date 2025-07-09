@@ -11,10 +11,15 @@ export default function UserHistory(){
                 "Authorization" : `Bearer ${localStorage.getItem('token')}`
             }
         })
+        const result = await response.json()
        } 
-    })
+    }, [])
 
     
+    const chartData = {
+        
+    }
+
     return(
         <>
         <div>
