@@ -11,7 +11,7 @@ export default function Register({token, setToken, username, setUsername, passwo
         e.preventDefault()
 
         try{
-            const respons = await fetch("https://localhost:3000/api/users/register", 
+            const response = await fetch("https://localhost:3000/api/users/register", 
                 {
                     method:"POST",
                     headers:{
