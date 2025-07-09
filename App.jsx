@@ -1,6 +1,6 @@
 import Navigations from './src/components/Navigations';
-import RecipeList from './compnenents/RecipeList';
-import RecipeDetails from './componenets/RecipeDetails';
+import RecipeList from './components/RecipeList';
+import RecipeDetails from './components/RecipeDetails';
 import {Routes, Route} from 'react-router-dom';
 import Register from './src/components/Register';
 import Login from './src/components/Login';
