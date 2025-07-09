@@ -17,13 +17,19 @@ export default function UserHistory(){
 
     
     const chartData = {
-        
+        labels: moodData.map(item => item.emotion),
+        datasets: [{
+            label: 'Mood Time',
+            data: moodData.map(item => item.count),
+            backgroundColor: ['']
+        }]
     }
 
     return(
         <>
         <div>
         <h2>Your Mood History</h2>
+        <Doughnut data={chartData}/>
         </div></>
     )
 }
