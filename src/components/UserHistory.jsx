@@ -6,13 +6,19 @@ export default function UserHistory(){
 
     useEffect(() => {
        async function getTrackedMoods(){
-        const response = await fetch("https://localhost:3000/users/account/mood/stats", {
+        try{
+            const response = await fetch("https://localhost:3000/users/account/mood/stats", {
             headers: {
                 "Authorization" : `Bearer ${localStorage.getItem('token')}`
             }
         })
         const result = await response.json()
-       } 
+        setMoodData(result)
+       }catch(error){
+        setError("Unable to track")
+       }
+      }
+      getTrackedMoods()
     }, [])
 
     
