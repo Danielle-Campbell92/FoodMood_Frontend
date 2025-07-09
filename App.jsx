@@ -1,11 +1,11 @@
-import Navigations from './components/Navigations';
+import Navigations from './src/components/Navigations';
 import RecipeList from './compnenents/RecipeList';
 import RecipeDetails from './componenets/RecipeDetails';
 import {Routes, Route} from 'react-router-dom';
-import Register from './components/Register';
-import Login from './components/Login';
-import UserHistory from './components/UserHistory';
-import MoodHome from './components/MoodHome';
+import Register from './src/components/Register';
+import Login from './src/components/Login';
+import UserHistory from './src/components/UserHistory';
+import MoodHome from './src/components/MoodHome';
 
 
 export default function App(){
@@ -18,7 +18,7 @@ export default function App(){
             <Navigations token={token} setToken={setToken}/>
             <Routes>
                 <Route path="/" element={<MoodHome />}/>
-                <Route path="/userhistory" element={<UserHistory token={token} setToken={setToken}/>}/>
+                <Route path="/account" element={<UserHistory token={token} setToken={setToken}/>}/>
                 <Route path="/login" element={<Login token={token} setToken={setToken}/>}/>
                 <Route path="/register" element={<Register token={token} setToken={setToken}/>}/>
                 <Route path="/recipes" element={<RecipeList/>}/>
