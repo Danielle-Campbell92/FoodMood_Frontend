@@ -11,7 +11,7 @@ export default function Register({token, setToken, username, setUsername, passwo
         e.preventDefault()
 
         try{
-            const response = await fetch("https://localhost:3000/api/users/register", 
+            const response = await fetch("http://localhost:3000/api/users/register", 
                 {
                     method:"POST",
                     headers:{
@@ -25,7 +25,7 @@ export default function Register({token, setToken, username, setUsername, passwo
             )
             const result = await response.json()
             setToken(result.token)
-            localStorage.setItem("token". result.token)
+            localStorage.setItem("token", result.token)
             setSuccess("Successfully registered")
             alert("You are officially registered")
             navigate("/login")
@@ -45,7 +45,7 @@ export default function Register({token, setToken, username, setUsername, passwo
                 <br></br>
                 <br></br>
                 <label>
-                    Password: <input value={username} onChange={(e) => setPassword(e.target.value)}/>
+                    Password: <input value={password} onChange={(e) => setPassword(e.target.value)}/>
                 </label>
                 <br></br>
                 <br></br>
