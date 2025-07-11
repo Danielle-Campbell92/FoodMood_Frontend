@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Register({token, setToken, username, setUsername, password, setPassword}){
     const [error, setError] = useState(null)
+    const [success, setSuccess] = useState(null)
     const navigate = useNavigate()
     
     async function handleSubmit(e){
@@ -24,6 +25,13 @@ export default function Register({token, setToken, username, setUsername, passwo
                 }
             )
             const result = await response.json()
+            
+            if(!response.ok){
+                setError(result.message || "Unable to register")
+                alert(result.message || "Unable to register")
+                return
+            }
+
             setToken(result.token)
             localStorage.setItem("token", result.token)
             setSuccess("Successfully registered")
