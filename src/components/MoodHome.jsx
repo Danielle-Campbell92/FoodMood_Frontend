@@ -5,6 +5,8 @@ import React from "react"
 
 function MoodsHome(){
     const[moods, setMoods] = useState([])
+
+
     useEffect(()=>{
         async function getMoods(){
             const response = await fetch("http://localhost:3000/mood")
