@@ -23,6 +23,16 @@ const MoodsHome = () =>{
     }, []);
     return( 
         <>
+        <ul>
+            {moods.map((mood) => (
+              <li key={moods.id}>
+                <strong>{mood.emotion}</strong> : {mood.description}
+              </li>
+            ))}
+            
+
+           
+        </ul>
         </>
     )
 }
