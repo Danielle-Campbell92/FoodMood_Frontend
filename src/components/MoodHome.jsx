@@ -21,18 +21,14 @@ const MoodsHome = () =>{
         };
         fetchMoods();
     }, []);
+
     return( 
         <>
-        <ul>
-            {moods.map((mood) => (
-              <li key={moods.id}>
-                <strong>{mood.emotion}</strong> : {mood.description}
-              </li>
-            ))}
-            
-
-           
-        </ul>
+        {moods.map((mood) => (
+        <button key={mood.id}>
+            <strong>{mood.emotion}</strong>: {mood.description}
+        </button>
+      ))}
         </>
     )
 }
