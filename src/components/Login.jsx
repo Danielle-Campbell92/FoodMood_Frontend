@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import React from "react";
 
 export default function Login({
   username,
@@ -17,7 +18,7 @@ export default function Login({
     e.preventDefault();
 
     try {
-      const responst = await fetch("https://localhost:3000/api/users/login", {
+      const response = await fetch("http://localhost:3000/api/users/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -62,6 +63,12 @@ export default function Login({
         <br />
         <br />
         <button type="submit">Login</button>
+        <br></br>
+        <br></br>
+        <Link to="/register">
+        <button type="submit">Create an Account?</button>
+        </Link>
+        
     </form>
   </div>)
 }
