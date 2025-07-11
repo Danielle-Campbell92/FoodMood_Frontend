@@ -10,7 +10,6 @@ import { useState } from 'react';
 import React from 'react';
 
 
-
 export default function App(){
     const [token, setToken] = useState(localStorage.getItem("token") || null)
     const [username, setUsername] = useState("")
