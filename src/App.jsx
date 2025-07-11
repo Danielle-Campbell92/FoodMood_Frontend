@@ -1,10 +1,10 @@
 import Navigations from './components/Navigations.jsx';
-import RecipeDetails from './components/RecipeDetails.jsx';
+// import RecipeDetails from './components/RecipeDetails.jsx';
 import RecipeList from './components/RecipeList.jsx';
 import {Routes, Route} from 'react-router-dom';
 import Register from './components/Register.jsx';
-import Login from './components/Login.jsx';
-import UserHistory from './components/UserHistory.jsx';
+// import Login from './components/Login.jsx';
+// import UserHistory from './components/UserHistory.jsx';
 import MoodHome from './components/MoodHome.jsx';
 import { useState } from 'react';
 import React from 'react';
