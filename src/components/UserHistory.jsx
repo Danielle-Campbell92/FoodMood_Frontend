@@ -1,8 +1,10 @@
+import React from 'react';
 import { useEffect, useState } from 'react';
 import { Doughnut } from 'react-chartjs-2';
 
 export default function UserHistory(){
     const [moodData, setMoodData] = useState([])
+    const [error, setError] = useState(null)
 
     useEffect(() => {
        async function getTrackedMoods(){

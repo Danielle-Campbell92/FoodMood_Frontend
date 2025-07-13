@@ -1,10 +1,11 @@
+import React from 'react';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
 export default function RecipeDetails(){
 
-    const [recipe, setRecipte] = useState(null);
+    const [recipe, setRecipes] = useState(null);
     const [error, setError] = useState(null);
     const { id } = useParams();
     const navigate = useNavigate();
@@ -17,7 +18,7 @@ export default function RecipeDetails(){
 
                 if (!response.ok) throw new Error("Error fetching recipe");
                 const data = await response.json();
-                setRecipte(data);
+                setRecipes(data);
                 setLoading(false);
             } catch (err) {
                 setError(err.message);
