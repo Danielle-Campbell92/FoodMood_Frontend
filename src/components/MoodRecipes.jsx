@@ -10,11 +10,14 @@ export function MoodRecipes(){
     useEffect(() => {
         const fetchMoodRecipes = async () => {
             try{
-
+                const response = await fetch('')
+                const result = await response.json()
+                setRecipes(result)
             }catch(error){
             setError(error)} 
         }
-    })
+        fetchMoodRecipes()
+    }, [id])
 
     return(
         <>
