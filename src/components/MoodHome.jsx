@@ -25,7 +25,7 @@ const MoodsHome = () =>{
     return( 
         <>
         {moods.map((mood) => (
-        <Link key={mood.id} to={`/mood/${mood.id}`}>
+        <Link key={mood.id} to={`/mood/${mood.emotion}`}>
             <button >
                 <strong>{mood.emotion}</strong>: {mood.description}
             </button>
