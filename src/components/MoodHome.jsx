@@ -25,9 +25,11 @@ const MoodsHome = () =>{
     return( 
         <>
         {moods.map((mood) => (
-        <button key={mood.id}>
-            <strong>{mood.emotion}</strong>: {mood.description}
-        </button>
+        <Link key={mood.id} to={`/mood/${mood.id}`}>
+            <button >
+                <strong>{mood.emotion}</strong>: {mood.description}
+            </button>
+        </Link>
       ))}
         </>
     )
