@@ -7,6 +7,15 @@ export function MoodRecipes(){
     const [recipes, setRecipes] = useState([])
     const [error, setError] = useState(null);
 
+    useEffect(() => {
+        const fetchMoodRecipes = async () => {
+            try{
+
+            }catch(error){
+            setError(error)} 
+        }
+    })
+
     return(
         <>
         </>
