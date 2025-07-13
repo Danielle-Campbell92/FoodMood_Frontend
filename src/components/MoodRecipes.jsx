@@ -9,6 +9,7 @@ export function MoodRecipes(){
     const { mood } = useParams();
     const [recipes, setRecipes] = useState([])
     const [error, setError] = useState(null);
+    const [moodId, setMoodId] = useState(null)
 
     useEffect(() => {
         const fetchMoodRecipes = async () => {
@@ -22,6 +23,23 @@ export function MoodRecipes(){
         }
         fetchMoodRecipes()
     }, [mood])
+
+       useEffect(() => {
+             const setTrackMood = async () => {
+             try{
+                const response = await fetch("http://localhost:3000/api/users/account/mood/track", {
+                    method: 'POST',
+                    headers: {"Authorization": `Bearer ${localStorage.getItem('token')}`,
+                    "Content-Type": "application/json"
+                    },
+                body: JSON.stringify({mood_id}),
+            })
+            }catch (error) {
+                setError("Unable to track mood")
+            }
+        }
+        setTrackMood()
+        }, [mood])
 
     return(
         <>
