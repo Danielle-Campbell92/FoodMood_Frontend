@@ -23,7 +23,7 @@ export default function App(){
             <Navigations token={token} setToken={setToken}/>
             <Routes>
                 <Route path="/" element={<MoodHome />}/>
-                <Route path="/account" element={<UserHistory token={token} setToken={setToken}/>}/>
+                <Route path="/saved" element={<UserHistory token={token} setToken={setToken}/>}/>
                 <Route path="/login" element={<Login token={token} setToken={setToken} username={username} setUsername={setUsername} password={password} setPassword={setPassword}/>}/>
                 <Route path="/register" element={<Register token={token} setToken={setToken} username={username} setUsername={setUsername} password={password} setPassword={setPassword}/>}/>
                 <Route path="/mood/:mood" element={<MoodRecipes/>}/>
