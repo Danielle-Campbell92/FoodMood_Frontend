@@ -8,6 +8,7 @@ import UserHistory from './components/UserHistory.jsx';
 import MoodHome from './components/MoodHome.jsx';
 import { useState } from 'react';
 import React from 'react';
+import { MoodRecipes } from './components/MoodRecipes.jsx';
 
 
 export default function App(){
@@ -26,7 +27,7 @@ export default function App(){
                 <Route path="/login" element={<Login token={token} setToken={setToken} username={username} setUsername={setUsername} password={password} setPassword={setPassword}/>}/>
                 <Route path="/register" element={<Register token={token} setToken={setToken} username={username} setUsername={setUsername} password={password} setPassword={setPassword}/>}/>
                 <Route path="/recipes" element={<RecipeList/>}/>
-                <Route path="/recipes/:id" element={<RecipeDetails/>}/>
+                <Route path="/mood/:mood" element={<MoodRecipes/>}/>
             </Routes>
         </div>
         </>
