@@ -1,6 +1,8 @@
+import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import RecipeDetails from './RecipeDetails';
+import RecipeCard from './RecipeCard.jsx';
+
 
 
 export function MoodRecipes(){
@@ -13,6 +15,7 @@ export function MoodRecipes(){
             try{
                 const response = await fetch(`http://localhost:3000/recipes/${mood}`)
                 const result = await response.json()
+                console.log("fetched recipes:", result)
                 setRecipes(result)
             }catch(error){
             setError(error)} 
@@ -25,7 +28,7 @@ export function MoodRecipes(){
         <div>
             <h2>Recipes for Mood: {mood}</h2>
             {recipes.map((recipe) => (
-                <RecipeDetails key={recipe.id} {...recipe}/>
+                <RecipeCard key={recipe.id} {...recipe}/>
             ))}
         </div>
         </>
