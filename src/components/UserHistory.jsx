@@ -9,7 +9,7 @@ export default function UserHistory(){
     useEffect(() => {
        async function getTrackedMoods(){
         try{
-            const response = await fetch("https://localhost:3000/users/account/mood/stats", {
+            const response = await fetch("http://localhost:3000/users/account/mood/stats", {
             headers: {
                 "Authorization" : `Bearer ${localStorage.getItem('token')}`
             }
@@ -29,7 +29,7 @@ export default function UserHistory(){
         datasets: [{
             label: 'Mood Time',
             data: moodData.map(item => item.count),
-            backgroundColor: ['']
+            backgroundColor: ['yellow', 'blue', 'red', '#pink', 'gray']
         }]
     }
 
