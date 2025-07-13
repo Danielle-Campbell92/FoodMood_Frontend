@@ -9,6 +9,7 @@ export default function UserHistory(){
     const [moodData, setMoodData] = useState([])
     const [error, setError] = useState(null)
 
+
     useEffect(() => {
        async function getMoods(){
         try{
@@ -26,27 +27,6 @@ export default function UserHistory(){
       }
       getMoods()
     }, [])
-
-    useEffect(() => {
-        async function setTrackMood(){
-        try{
-            const response = await fetch("http://localhost:3000/api/users/account/mood/track", {
-                method: 'POST',
-                headers: {"Authorization": `Bearer ${localStorage.getItem('token')}`,
-                "Content-Type": "application/json"
-                },
-            body: JSON.stringify({mood_id}),
-        })
-        const result = await response.json()
-        setMoodData(result.data)
-        }catch(error){
-         setError("Unable to track")
-        }
-    }
-    setTrackMood()
-    }, [])
-
-
     
     
     const chartData = {
