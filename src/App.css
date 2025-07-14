@@ -1,3 +1,39 @@
+.mood-button-container {
+  display: grid;
+  gap: 50px
+}
+.card-happy{
+  box-shadow: 0 4px 8px 0 rgba(243, 213, 19, 0.25);
+}
+
+.card-happy:hover{
+  background-color: rgb(222, 205, 20);
+}
+
+.card-sad{
+  box-shadow: 0 4px 8px 0 rgba(6, 142, 201, 0.25);
+}
+
+.card-sad:hover{
+  background-color: rgb(16, 6, 89);
+}
+
+.card-angry{
+  box-shadow: 0 4px 8px 0 rgba(201, 6, 6, 0.25);
+}
+
+.card-angry:hover{
+  background-color: rgb(157, 18, 18);
+}
+
+.card-romantic{
+  box-shadow: 0 4px 8px 0 rgba(198, 6, 201, 0.25);
+}
+
+.card-romantic:hover{
+  background-color: rgb(93, 14, 93);
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -12,7 +48,7 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #efa365aa);
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
