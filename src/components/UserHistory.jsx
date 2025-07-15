@@ -42,7 +42,7 @@ export default function UserHistory(){
         datasets: [{
             label: 'Mood Time',
             data: moodData.map(item => item.count),
-            backgroundColor: ['yellow', 'blue', 'red', 'pink', 'gray']
+            backgroundColor: moodData.map(item => emotionColorMap[item.emotion] || 'black')
         }]
     }
 
