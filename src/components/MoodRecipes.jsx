@@ -15,7 +15,7 @@ export function MoodRecipes(){
     useEffect(() => {
         const fetchMoodRecipes = async () => {
             try{
-                const response = await fetch(`http://localhost:3000/recipes/${mood}`)
+                const response = await fetch(`http://localhost:3000/recipes/mood/${mood}`)
                 const result = await response.json()
                 console.log("fetched recipes:", result)
                 setRecipes(result)
