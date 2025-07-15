@@ -3,6 +3,7 @@ import {Link} from "react-router-dom"
 import Navigations from "./Navigations"
 import React from "react"
 import '../App.css'
+import { color } from "chart.js/helpers"
 
 const MoodsHome = () =>{
     const [moods, setMoods] = useState([]);

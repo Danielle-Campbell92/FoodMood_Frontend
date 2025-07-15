@@ -1,25 +1,33 @@
+h2{
+  color: black;
+}
+
+h3{
+  color: rgb(95, 74, 74);
+}
+
 .mood-button-container {
   display: grid;
-  gap: 50px
+  gap: 50px;
 }
 .card-happy{
-  box-shadow: 0 4px 8px 0 rgba(243, 213, 19, 0.25);
+  box-shadow: 0 20px 20px 0 rgb(243, 213, 19);
 }
 
 .card-happy:hover{
-  background-color: rgb(222, 205, 20);
+  background-color: rgb(255, 204, 0);
 }
 
 .card-sad{
-  box-shadow: 0 4px 8px 0 rgba(6, 142, 201, 0.25);
+  box-shadow: 0 20px 20px 0 rgb(6, 142, 201);
 }
 
 .card-sad:hover{
-  background-color: rgb(16, 6, 89);
+  background-color: rgb(38, 17, 193);
 }
 
 .card-angry{
-  box-shadow: 0 4px 8px 0 rgba(201, 6, 6, 0.25);
+  box-shadow: 0 20px 20px 0 rgb(201, 6, 6);
 }
 
 .card-angry:hover{
@@ -27,7 +35,7 @@
 }
 
 .card-romantic{
-  box-shadow: 0 4px 8px 0 rgba(198, 6, 201, 0.25);
+  box-shadow: 0 20px 20px 0 rgb(198, 6, 201);
 }
 
 .card-romantic:hover{

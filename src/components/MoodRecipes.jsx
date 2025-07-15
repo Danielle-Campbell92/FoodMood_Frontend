@@ -67,8 +67,8 @@ export function MoodRecipes(){
         <>
         <div>
             <h2>Recipes for Mood: {mood}</h2>
-            {recipes.map((recipe) => (
-                <RecipeCard key={recipe.id} {...recipe}/>
+           {recipes.map((recipe) => (
+                 <RecipeCard key={recipe.id} {...recipe}/>
             ))}
         </div>
         </>
