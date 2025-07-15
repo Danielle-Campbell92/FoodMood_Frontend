@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import React from 'react';
 
 export default function RecipeDetails() {
   const [recipe, setRecipe] = useState(null);
