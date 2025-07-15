@@ -29,6 +29,14 @@ export default function UserHistory(){
     }, [])
     
     
+    const emotionColorMap = {
+        happy: 'yellow',
+        sad: 'blue',
+        angry: 'red',
+        romantic: 'pink',
+        neutral: 'gray'
+    }
+
     const chartData = {
         labels: moodData.map(item => item.emotion),
         datasets: [{
