@@ -84,3 +84,150 @@ h3{
 .read-the-docs {
   color: #888;
 }
+
+
+.navBar{
+  position: fixed;
+  top: 15px;
+  left:0;
+  width: 97%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 20px;
+  margin-left: 8px;
+  background: linear-gradient(#f5e9d3, white, #f5e9d3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  animation: glowShift 15s infinite linear;
+}
+
+@keyframes glowShift{
+  0% {box-shadow: 0 0 15px red}
+  15%{box-shadow: 0 0 15px orange}
+  30%{box-shadow: 0 0 15px yellow}
+  45%{box-shadow: 0 0 15px green}
+  60%{box-shadow: 0 0 15px blue}
+  75%{box-shadow: 0 0 15px purple}
+  100%{box-shadow: 0 0 15px #e36d81;}
+}
+
+.navBar a{
+  color: black;
+  font-family:"QuickSand", sans-serif;
+  font-size: 18px;
+  padding: 10px 20px;
+  background: wheat;
+  border-radius: 8px;
+  transition: all 0.4s ease;
+}
+
+.navBar a:hover{
+  color: black;
+  font-weight: 600px;
+  font-size: 22px;
+  background: linear-gradient(red, orange, yellow, green, blue, purple);
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container h2 {
+  font-family: "QuickSand", sans-serif;
+  color: #333;
+  padding: 20px;
+}
+
+.login-container label {
+  font-family: "QuickSand", sans-serif;
+  font-size: 1.2em;
+  color: #333;
+  font-weight: 800;
+}
+
+.login-container input {
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+  background-color: rgb(171, 160, 255);
+  border: 1px solid #333;
+  font-family: "QuickSand", sans-serif;
+  font-size: 1em;
+  color: #333;
+  font-weight: 500;
+}
+
+.login-container button {
+  background-color: rgb(171, 160, 255);
+  color: #333;
+  border: 1px solid #333;
+  font-family: "QuickSand", sans-serif;
+  font-weight: 800;
+}
+.login-container button:hover {
+  box-shadow: 0 0.25em 0.25em -0.1em rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.25em);
+}
+
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-container h2 {
+  font-family: "QuickSand", sans-serif;
+  color: #333;
+  padding: 20px;
+}
+
+.register-container label {
+  font-family: "QuickSand", sans-serif;
+  font-size: 1.2em;
+  color: #333;
+  font-weight: 800;
+}
+
+.register-container input {
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+  background-color: rgb(171, 160, 255);
+  border: 1px solid #333;
+  font-family: "QuickSand", sans-serif;
+  font-size: 1em;
+  color: #333;
+  font-weight: 500;
+}
+
+.register-container button {
+  background-color: rgb(171, 160, 255);
+  color: #333;
+  border: 1px solid #333;
+  font-family: "QuickSand", sans-serif;
+  font-weight: 800;
+}
+.register-container button:hover {
+  box-shadow: 0 0.25em 0.25em -0.1em rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.25em);
+}
+
+.chart-container{
+  background: linear-gradient(#f5e9d3, white, #f5e9d3);
+  height: 600px;
+  width: 500px;
+  padding: 100px;
+  border-radius: 20%;
+  font-family: "QuickSand", sans-serif;
+  font-size: x-large;
+  text-decoration: underline;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.chart-container :hover{
+  transform: scale(1.05);
+}

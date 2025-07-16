@@ -48,14 +48,13 @@ export default function UserHistory(){
 
     return(
         <>
-        <div>
+        <div className='chart-container'>
         <h2>Your Mood History</h2>
         {moodData.length === 0 ? (
             <p>Loading your mood history...</p>
         ) : (
            <Doughnut data={chartData}/> 
         )}
-        
         </div></>
     )
 }

@@ -47,7 +47,7 @@ export default function Login({
   }
 
   return (
-  <div>
+  <div className='login-container'>
     <h2>Login to your account below:</h2>
     <form onSubmit={handleSubmit}>
         <label>
