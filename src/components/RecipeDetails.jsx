@@ -11,12 +11,10 @@ export default function RecipeDetails() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    //added console log to check if id is being passed (ran into issues)
     console.log("Recipe ID from params:", id);
     async function fetchRecipe() {
       try {
         const response = await fetch(`http://localhost:3000/recipes/${id}`);
-
         if (!response.ok) throw new Error("Error fetching recipe");
         const result = await response.json();
         console.log("Recipe data from API:", result);
@@ -39,6 +37,7 @@ export default function RecipeDetails() {
         <h2>What's your FoodMood?</h2>
         <p>{recipe.emotion}</p>
       </div>
+
       <div>
         <h2>Let music help your Mood!</h2>
         {recipe.playlist_url && (
@@ -50,13 +49,33 @@ export default function RecipeDetails() {
               )}&color=%23ff5500&auto_play=false`}
               width="100%"
               height="380"
+              frameBorder="0"
+              allow="autoplay"
+              title="Mood Playlist"
             ></iframe>
           </div>
         )}
       </div>
+
       <div className="recipeCard">
         <h3>{recipe.title}</h3>
+
+        {recipe.image_url && (
+          <img
+            src={recipe.image_url}
+            alt={recipe.title}
+            style={{
+              width: "100%",
+              maxWidth: "500px",
+              borderRadius: "12px",
+              margin: "1rem 0",
+              boxShadow: "0 0 10px rgba(0,0,0,0.1)",
+            }}
+          />
+        )}
+
         <p>{recipe.description}</p>
+
         <h4>Ingredients:</h4>
         <ul>
           {recipe.ingredients &&
@@ -64,6 +83,7 @@ export default function RecipeDetails() {
               <li key={index}>{ingredient}</li>
             ))}
         </ul>
+
         <h4>Let's Cook!</h4>
         <p>{recipe.instructions}</p>
       </div>
@@ -74,4 +94,3 @@ export default function RecipeDetails() {
     </div>
   );
 }
-
