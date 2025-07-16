@@ -7,7 +7,7 @@ h3{
 }
 
 .mood-button-container {
-  display: grid;
+  display: inline-grid;
   gap: 50px;
 }
 .card-happy{
