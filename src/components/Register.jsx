@@ -44,7 +44,7 @@ export default function Register({token, setToken, username, setUsername, passwo
     }
     return(
         <>
-        <div>
+        <div className='register-container'>
             <h2>Register to Create An Account</h2>
             <form onSubmit={handleSubmit}>
                 <label>
