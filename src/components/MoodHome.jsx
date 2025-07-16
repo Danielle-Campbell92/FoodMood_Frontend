@@ -25,16 +25,17 @@ const MoodsHome = () =>{
     }, []);
 
     return(
-        <div className='mood-button-container'>
-            <h2>Hello and welcome to FoodMood! To continue, select the button that best aligns with your current mood.</h2>
-                <h3>Hint: Login to save your favorite recipes and playlists!</h3>
-        {moods.map((mood) => (
+        <div className="text">
+            <h2>Welcome to FoodMood! To continue, select a mood below that best aligns with your current mood!</h2>
+            <h3>Hint: Login to track mood history!</h3>
+        <div className='mood-button-container'>{moods.map((mood) => (
         <Link key={mood.id} to={`/mood/${mood.emotion}`}>
             <button className={`card card-${mood.emotion.toLowerCase()}`}>
                 <strong>{mood.emotion}</strong>: {mood.description}
             </button>
         </Link>
       ))}
+        </div>
         </div>
     )
 }
