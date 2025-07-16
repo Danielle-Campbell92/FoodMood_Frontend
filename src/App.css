@@ -1,3 +1,12 @@
+:root {
+  --red: rgb(241, 131, 131);
+  --orange: rgb(255, 215, 141);
+  --yellow:rgb(255, 245, 138);
+  --green: rgb(163, 253, 163);
+  --purple: rgb(171, 160, 255);
+  --pink: rgb(255, 167, 255);
+}
+
 h2{
   color: black;
 }
@@ -90,42 +99,45 @@ h3{
   position: fixed;
   top: 15px;
   left:0;
-  width: 97%;
+  width: 92%;
   display: flex;
   justify-content: flex-end;
   gap: 20px;
   padding: 20px;
   margin-left: 8px;
-  background: linear-gradient(#f5e9d3, white, #f5e9d3);
+  background: white;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
   animation: glowShift 15s infinite linear;
+  border-radius: 50px;
+  opacity: 0.8;
 }
 
 @keyframes glowShift{
-  0% {box-shadow: 0 0 15px red}
-  15%{box-shadow: 0 0 15px orange}
-  30%{box-shadow: 0 0 15px yellow}
-  45%{box-shadow: 0 0 15px green}
-  60%{box-shadow: 0 0 15px blue}
-  75%{box-shadow: 0 0 15px purple}
-  100%{box-shadow: 0 0 15px #e36d81;}
+  0% {box-shadow: 0 0 15px var(--red)}
+  15%{box-shadow: 0 0 15px var(--orange)}
+  30%{box-shadow: 0 0 15px var(--yellow)}
+  45%{box-shadow: 0 0 15px var(--green)}
+  60%{box-shadow: 0 0 15px var(--purple)}
+  75%{box-shadow: 0 0 15px var(--pink)}
+  100%{box-shadow: 0 0 15px var(--red)}
 }
 
 .navBar a{
   color: black;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "QuickSand", sans-serif;
   font-size: 18px;
   padding: 10px 20px;
-  background: wheat;
+  /* background: var(--green); */
   border-radius: 8px;
   transition: all 0.4s ease;
 }
 
 .navBar a:hover{
   color: black;
+  font-family: "QuickSand", sans-serif;
   font-weight: 600px;
   font-size: 22px;
-  background: linear-gradient(red, orange, yellow, green, blue, purple);
+  background: radial-gradient(circle, var(--red) 0%, var(--orange) 10%, var(--yellow), var(--green) 45%, var(--purple), var(--pink));
 }
 
 .login-container {
@@ -152,7 +164,7 @@ h3{
   padding: 5px;
   border-radius: 5px;
   margin-left: 10px;
-  background-color: rgb(171, 160, 255);
+  background-color: var(--yellow);
   border: 1px solid #333;
   font-family: "QuickSand", sans-serif;
   font-size: 1em;
@@ -161,7 +173,7 @@ h3{
 }
 
 .login-container button {
-  background-color: rgb(171, 160, 255);
+  background-color: var(--orange);
   color: #333;
   border: 1px solid #333;
   font-family: "QuickSand", sans-serif;
@@ -196,7 +208,7 @@ h3{
   padding: 5px;
   border-radius: 5px;
   margin-left: 10px;
-  background-color: rgb(171, 160, 255);
+  background-color: var(--purple);
   border: 1px solid #333;
   font-family: "QuickSand", sans-serif;
   font-size: 1em;
@@ -205,7 +217,7 @@ h3{
 }
 
 .register-container button {
-  background-color: rgb(171, 160, 255);
+  background-color: var(--green);
   color: #333;
   border: 1px solid #333;
   font-family: "QuickSand", sans-serif;
