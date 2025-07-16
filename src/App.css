@@ -84,3 +84,17 @@ h3{
 .read-the-docs {
   color: #888;
 }
+
+
+.navBar{
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 20px;
+  background:#fffbfb;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  border-bottom: 2px solid wheat;
+  animation: glowShift 5s infinite linear;
+}
+
+

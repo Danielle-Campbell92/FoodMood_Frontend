@@ -10,7 +10,7 @@ export default function Navigations({token, setToken}){
     return(
         <>
         <nav>
-            <div>
+            <div className="navBar">
                 <Link to="/">Home</Link>
                 <br></br>
                 {token ? (
