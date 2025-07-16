@@ -16,7 +16,7 @@ h3{
 }
 
 .mood-button-container {
-  display: grid;
+  display: inline-grid;
   gap: 50px;
 }
 .card-happy{
@@ -226,4 +226,20 @@ h3{
 .register-container button:hover {
   box-shadow: 0 0.25em 0.25em -0.1em rgba(0, 0, 0, 0.2);
   transform: translateY(-0.25em);
+}
+
+.chart-container{
+  background: linear-gradient(#f5e9d3, white, #f5e9d3);
+  height: 600px;
+  width: 500px;
+  padding: 100px;
+  border-radius: 20%;
+  font-family: "QuickSand", sans-serif;
+  font-size: x-large;
+  text-decoration: underline;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.chart-container :hover{
+  transform: scale(1.05);
 }
