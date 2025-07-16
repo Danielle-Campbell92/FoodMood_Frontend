@@ -87,14 +87,43 @@ h3{
 
 
 .navBar{
+  position: fixed;
+  top: 15px;
+  left:0;
+  width: 97%;
   display: flex;
   justify-content: flex-end;
   gap: 20px;
   padding: 20px;
-  background:#fffbfb;
+  margin-left: 8px;
+  background: linear-gradient(#f5e9d3, white, #f5e9d3);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
-  border-bottom: 2px solid wheat;
-  animation: glowShift 5s infinite linear;
+  animation: glowShift 15s infinite linear;
 }
 
+@keyframes glowShift{
+  0% {box-shadow: 0 0 15px red}
+  15%{box-shadow: 0 0 15px orange}
+  30%{box-shadow: 0 0 15px yellow}
+  45%{box-shadow: 0 0 15px green}
+  60%{box-shadow: 0 0 15px blue}
+  75%{box-shadow: 0 0 15px purple}
+  100%{box-shadow: 0 0 15px #e36d81;}
+}
 
+.navBar a{
+  color: black;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
+  padding: 10px 20px;
+  background: wheat;
+  border-radius: 8px;
+  transition: all 0.4s ease;
+}
+
+.navBar a:hover{
+  color: black;
+  font-weight: 600px;
+  font-size: 22px;
+  background: linear-gradient(red, orange, yellow, green, blue, purple);
+}
