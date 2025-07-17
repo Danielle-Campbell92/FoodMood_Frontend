@@ -267,7 +267,6 @@ h3{
 
 .recipe-list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   margin-top: 20px;
@@ -278,6 +277,7 @@ h3{
   border-radius: 5px;
   padding: 10px;
   font-family: "QuickSand", sans-serif;
+  background-color: var(--orange);
 }
 
 .recipe-card h3 {
@@ -286,3 +286,4 @@ h3{
   color: var(--yellow);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
