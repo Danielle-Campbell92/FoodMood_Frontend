@@ -37,11 +37,11 @@ export default function UserHistory(){
     }
 
     const chartData = {
-        labels: moodData.map(item => item.emotion),
+        labels: moodData.map(m => m.emotion),
         datasets: [{
             label: 'Mood Time',
-            data: moodData.map(item => item.count),
-            backgroundColor: moodData.map(item => emotionColorMap[item.emotion] || 'black')
+            data: moodData.map(m => m.count),
+            backgroundColor: moodData.map(m => emotionColorMap[m.emotion] || 'black')
         }]
     }
 
