@@ -6,7 +6,7 @@ export default function RecipeCard({title, description, id}){
 
     return(
         <>
-        <div>
+        <div className="recipe-card">
             <h3>{title}</h3>
             <p>{description}</p>
             <button onClick={() => navigate(`/recipes/${id}`)}>View Recipe</button>

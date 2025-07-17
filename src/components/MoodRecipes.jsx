@@ -65,11 +65,13 @@ export function MoodRecipes(){
 
     return(
         <>
-        <div>
+        <div className="mood-recipes">
             <h2>Recipes for Mood: {mood}</h2>
+            <div className="recipe-list">
            {recipes.map((recipe) => (
                  <RecipeCard key={recipe.id} {...recipe}/>
             ))}
+            </div>
         </div>
         </>
     )
