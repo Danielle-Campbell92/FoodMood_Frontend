@@ -235,9 +235,9 @@ h3{
 
 .chart-container{
   background: linear-gradient(#f5e9d3, white, #f5e9d3);
+  position: relative;
   height: 600px;
   width: 500px;
-  padding: 100px;
   border-radius: 20%;
   font-family: "QuickSand", sans-serif;
   font-size: x-large;
