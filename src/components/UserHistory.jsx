@@ -19,7 +19,6 @@ export default function UserHistory(){
             }
         })
         const result = await response.json()
-        console.log("Fetched mood stat:", result)
         setMoodData(result.data)
        }catch(error){
         setError("Unable to return stats")
