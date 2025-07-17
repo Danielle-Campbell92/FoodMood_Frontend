@@ -277,23 +277,31 @@ h3{
   border: 1px solid #333;
   border-radius: 10px;
   padding: 20px;
+  width: 300px;
   font-family: "Quicksand", sans-serif;
   background-color: #fff;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: floatCard 3s ease-in-out infinite;
+    position: relative;
 }
 
 .recipe-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 30px rgba(59, 57, 57, 0.4);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(59, 57, 57, 0.4);
 }
 
 .recipe-card h3 {
   font-family: "Modak", cursive;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--yellow);
-  text-shadow: 2px 2px 4px rgba(46, 43, 43, 0.5);
+  text-shadow: 2px 2px 5px rgba(46, 43, 43, 0.5);
+  margin-bottom: 10px;
+}
+.recipe-description {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #ddd;
+  margin-bottom: 8px;
 }
 
 @keyframes floatCard {
