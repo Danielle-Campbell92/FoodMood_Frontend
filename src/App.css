@@ -9,6 +9,7 @@
 
 h2{
   color: black;
+  margin-top: 200px;
 }
 
 h3{
@@ -97,9 +98,9 @@ h3{
 
 .navBar{
   position: fixed;
-  top: 15px;
+  top: 200px;
   left:0;
-  width: 92%;
+  width: 97%;
   display: flex;
   justify-content: flex-end;
   gap: 20px;
@@ -238,8 +239,24 @@ h3{
   font-size: x-large;
   text-decoration: underline;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  margin-top: 50%;
 }
 
 .chart-container :hover{
   transform: scale(1.05);
+}
+
+.title-header{
+  position: fixed;
+  top:  0;
+  font-family: "Modak";
+  font-size: 125px;
+  color: white;
+  text-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: flex-start;
+  left: 40px;
+  z-index: 2000;
+  padding-top: 70px;
+  margin: 0;
 }

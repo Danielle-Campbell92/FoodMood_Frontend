@@ -20,6 +20,7 @@ export default function App(){
     return(
         <>
         <div>
+        <h1 className="title-header">FoodMood</h1>
             <Navigations token={token} setToken={setToken}/>
             <Routes>
                 <Route path="/" element={<MoodHome />}/>
