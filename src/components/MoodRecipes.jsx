@@ -17,7 +17,6 @@ export function MoodRecipes(){
             try{
                 const response = await fetch(`http://localhost:3000/recipes/mood/${mood}`)
                 const result = await response.json()
-                console.log("fetched recipes:", result)
                 setRecipes(result)
             }catch(error){
             setError(error)} 
@@ -30,14 +29,14 @@ export function MoodRecipes(){
         const getMoodId = async () => {
             try {
                 const response = await fetch("http://localhost:3000/mood")
-                const moods = await response.json()
-                const foundMood = moods.find(m => m.emotion.toLowerCase() === mood.toLowerCase())
-                if (foundMood) {
+                const result = await response.json()
+                const foundMood = result.find(m => m.emotion === mood)
+                if(foundMood) {
                     setMoodId(foundMood.id);
-                } else {
+                }else{
                     setError("Mood not found")
                 }
-            } catch (error) {
+            } catch(error){
                 setError("Failed to fetch moods")
             }
         }
