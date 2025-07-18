@@ -34,8 +34,8 @@ export default function RecipeDetails() {
   if (error) return <p>Error: {error}</p>;
 
   return (
-    <div>
-      <div>
+    <div className="single-recipe-page">
+      <div className={`recipe-title-${recipe.emotion}`}>
         <h2>What's your FoodMood?</h2>
         <p>{recipe.emotion}</p>
       </div>
@@ -54,7 +54,7 @@ export default function RecipeDetails() {
           </div>
         )}
       </div>
-      <div className="recipeCard">
+      <div className="single-recipe">
         <h3>{recipe.title}</h3>
         <p>{recipe.description}</p>
         <h4>Ingredients:</h4>

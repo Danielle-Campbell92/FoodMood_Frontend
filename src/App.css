@@ -5,11 +5,13 @@
   --green: rgb(163, 253, 163);
   --purple: rgb(171, 160, 255);
   --pink: rgb(255, 167, 255);
+  --magenta: rgb(224, 44, 155);
+  --blue: rgb(0, 0, 0);
 }
 
 h2{
   color: black;
-  margin-top: 200px;
+  /* margin-top: 200px; */
   font-family: "QuickSand", sans-serif;
 }
 
@@ -314,4 +316,44 @@ h3{
     box-shadow: 0 10px 15px rgba(83, 81, 81, 0.3);
   }
 }
+.recipe-title- {
+  margin-top: -200px;
+  border: 1px solid black;
+}
 
+.recipe-title-happy p {
+  color: var(--yellow);
+  font-family: "Modak", cursive;
+  font-size: 3rem; 
+  text-shadow: 0 5px 20px var(--red);
+  margin-top: -20px; 
+}
+.recipe-title-sad p {
+  color: var(--blue);
+  font-family: "Modak", cursive;
+  font-size: 3rem; 
+  text-shadow: 0 5px 20px deepskyblue;
+  margin-top: -20px; 
+}
+.recipe-title-angry p {
+  color: darkred;
+  font-family: "Modak", cursive;
+  font-size: 3rem; 
+  text-shadow: 0 5px 20px var(--magenta);
+  margin-top: -20px; 
+}
+.recipe-title-romantic p {
+  color: var(--magenta);
+  font-family: "Modak", cursive;
+  font-size: 3rem; 
+  text-shadow: 0 5px 20px var(--pink);
+  margin-top: -20px;
+}
+
+.single-recipe {
+  border: 1px solid black;
+}
+
+.single-recipe-page {
+  margin-top: 300px;
+}
