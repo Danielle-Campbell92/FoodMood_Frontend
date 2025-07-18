@@ -351,7 +351,14 @@ h3{
 }
 
 .single-recipe {
-  border: 1px solid black;
+  font-family: "QuickSand", sans-serif;
+  color: #333;
+}
+
+.single-recipe li {
+  list-style: none;
+  text-align: center;
+  padding-right: 40px;
 }
 
 .single-recipe-page {
