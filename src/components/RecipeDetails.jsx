@@ -48,8 +48,8 @@ export default function RecipeDetails() {
               src={`https://w.soundcloud.com/player/?url=${encodeURIComponent(
                 recipe.playlist_url
               )}&color=%23ff5500&auto_play=false`}
-              width="100%"
-              height="380"
+              width="700"
+              height="150"
             ></iframe>
           </div>
         )}
