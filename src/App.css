@@ -525,19 +525,81 @@ h3{
   margin-top: -20px;
 }
 
-.single-recipe {
-  font-family: "QuickSand", sans-serif;
-  color: #333;
+.single-recipe-page {
+  margin-top: 300px;
 }
 
-.single-recipe li {
+.single-recipe-page button:hover {
+  box-shadow: 0 0.25em 0.25em -0.1em rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.25em);
+}
+
+.single-recipe-happy {
+  font-family: "QuickSand", sans-serif;
+  font-size: 1.2rem;
+  color: #333;
+  background-color: var(--yellow);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.single-recipe-happy li {
   list-style: none;
   text-align: center;
   padding-right: 40px;
 }
 
-.single-recipe-page {
-  margin-top: 300px;
+.single-recipe-sad {
+  font-family: "QuickSand", sans-serif;
+  font-size: 1.2rem;
+  color: #333;
+  background-color: var(--lightblue);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.single-recipe-sad li {
+  list-style: none;
+  text-align: center;
+  padding-right: 40px;
+}
+
+.single-recipe-angry {
+  font-family: "QuickSand", sans-serif;
+  font-size: 1.2rem;
+  color: #333;
+  background-color: var(--red);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.single-recipe-angry li {
+  list-style: none;
+  text-align: center;
+  padding-right: 40px;
+}
+
+.single-recipe-romantic {
+  font-family: "QuickSand", sans-serif;
+  font-size: 1.2rem;
+  color: #333;
+  background-color: var(--pink);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.single-recipe-romantic li {
+  list-style: none;
+  text-align: center;
+  padding-right: 40px;
 }
 
 .cooking-video-banner{
