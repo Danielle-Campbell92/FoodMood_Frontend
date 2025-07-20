@@ -47,6 +47,9 @@ export default function UserHistory(){
 
     return(
         <>
+        <div className='mood-video-background'>
+                <iframe src='https://www.youtube.com/embed/z9gtqEhBUJA?autoplay=1&mute=1&controls=0&loop=1&playlist=z9gtqEhBUJA' title='Mood Video Background'></iframe>
+        </div>
         <div className='chart-container'>
         <h2>Your Mood History</h2>
         {moodData.length === 0 ? (
