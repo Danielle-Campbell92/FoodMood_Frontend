@@ -483,3 +483,28 @@ h3{
 .single-recipe-page {
   margin-top: 300px;
 }
+
+.cooking-video-banner{
+  position:relative;
+  width: 100%;
+  height: 15vh;
+  overflow: hidden;
+  z-index: -1;
+  top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.cooking-video-banner iframe{
+  position: absolute;
+  border: 2px solid black;
+  top: 50%;
+  left: 50%;
+  width: 177.77vh;
+  height: 80vh;
+  transform: translate(-50%, -50%);
+  border: none; 
+  pointer-events: none;
+}

@@ -65,6 +65,9 @@ export function MoodRecipes(){
     return(
         <>
         <div className="mood-recipes">
+            <div className='cooking-video-banner'>
+                <iframe src='https://www.youtube.com/embed/YwhxiJuwSag?autoplay=1&mute=1&loop=1&controls=0&playlist=YwhxiJuwSag&modestbranding=1&rel=0' frameBorder={"0"} allow='autoplay; encrypted-media' title='Mood Video Banner'></iframe>
+            </div>
             <h2>Recipes for Mood: {mood}</h2>
             <div className="recipe-list">
            {recipes.map((recipe) => (
