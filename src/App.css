@@ -48,6 +48,20 @@ h3{
   background-color: rgb(255, 204, 0);
 }
 
+.card-happy:hover strong{
+  visibility: hidden;
+  position: relative;
+}
+.card-happy:hover strong::before{
+  content: "😊";
+  visibility: visible;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: scale(2.5);
+  transition: 1.0 s ease-in-out;
+}
+
 .card-sad{
   box-shadow: 0 20px 20px 0 rgb(6, 142, 201);
   background-color: #efebeb;
@@ -55,6 +69,20 @@ h3{
 
 .card-sad:hover{
   background-color: rgb(38, 17, 193);
+}
+
+.card-sad:hover strong{
+  visibility: hidden;
+  position: relative;
+}
+.card-sad:hover strong::before{
+  content: "😢";
+  visibility: visible;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: scale(2.5);
+  transition: 1.0 s ease-in-out;
 }
 
 .card-angry{
@@ -66,6 +94,20 @@ h3{
   background-color: rgb(157, 18, 18);
 }
 
+.card-angry:hover strong{
+  visibility: hidden;
+  position: relative;
+}
+.card-angry:hover strong::before{
+  content: "😡";
+  visibility: visible;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: scale(2.5);
+  transition: 1.0 s ease-in-out;
+}
+
 .card-romantic{
   box-shadow: 0 20px 20px 0 rgb(198, 6, 201);
   background-color: #efebeb;
@@ -73,6 +115,20 @@ h3{
 
 .card-romantic:hover{
   background-color: rgb(93, 14, 93);
+}
+
+.card-romantic:hover strong{
+  visibility: hidden;
+  position: relative;
+}
+.card-romantic:hover strong::before{
+  content: "😍";
+  visibility: visible;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: scale(2.5);
+  transition: 1.0 s ease-in-out;
 }
 
 #root {
