@@ -190,6 +190,7 @@ h3{
   animation: glowShift 15s infinite linear;
   border-radius: 50px;
   opacity: 0.8;
+  z-index: 3000;
 }
 
 @keyframes glowShift{
@@ -347,10 +348,10 @@ h3{
 
 .recipe-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   justify-items: center;
-  align-self: center;
+  align-content: space-evenly;
   width: 100%;
   gap: 20px;
 }
@@ -645,4 +646,9 @@ h3{
   left: 50%;
   transform: translate(-50%, -50%);
   pointer-events: none;
+}
+
+img {
+  width: 200px;
+  height: auto;
 }
