@@ -56,6 +56,7 @@ export default function RecipeDetails() {
       </div>
       <div className={`single-recipe-${recipe.emotion}`}>
         <h3>{recipe.title}</h3>
+        <img src={recipe.image_url} alt={recipe.title} />
         <p>{recipe.description}</p>
         <h4>Ingredients:</h4>
         <ul>
